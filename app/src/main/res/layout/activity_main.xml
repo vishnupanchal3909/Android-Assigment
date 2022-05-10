@@ -54,6 +54,12 @@
             android:id="@+id/GoLoginPage"
             android:padding="5dp"
             android:text="LOgin Page"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Rating"
+            android:padding="5dp"
+            android:text="Rating Bar"/>
 
     </LinearLayout>
 

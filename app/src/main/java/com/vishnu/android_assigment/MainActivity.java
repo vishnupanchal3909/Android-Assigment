@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button JumpToWithText,ASMDBtn,FactorialBtn,RadioBtn,CheckBoxBtn,IncreaseTextBtn,LoginBtn;
+    Button JumpToWithText,ASMDBtn,FactorialBtn,RadioBtn,CheckBoxBtn,IncreaseTextBtn,LoginBtn,RatingBarBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBoxBtn=findViewById(R.id.CheckBoxBtn);
         IncreaseTextBtn=findViewById(R.id.TextIncrease);
         LoginBtn=findViewById(R.id.GoLoginPage);
+        RatingBarBtn=findViewById(R.id.Rating);
 
 
         JumpToWithText.setOnClickListener(new View.OnClickListener() {
@@ -72,6 +73,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),Login_Activity.class);
+                startActivity(intent);
+            }
+        });
+        RatingBarBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),RatingBar_Activity.class);
                 startActivity(intent);
             }
         });
