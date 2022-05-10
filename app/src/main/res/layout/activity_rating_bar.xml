@@ -11,23 +11,36 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="USB System"
-        android:textSize="20sp"
-        android:layout_marginLeft="20dp"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="198dp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:id="@+id/answer"
-            android:padding="10dp"
-            android:textColor="@color/black"/>
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USB System"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="149dp"
+                tools:layout_editor_absoluteY="198dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/answer"
+                    android:padding="10dp"
+                    android:textColor="@color/black"/>
 
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/show"
+            android:text="Submit"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
+
+
 </RelativeLayout>
