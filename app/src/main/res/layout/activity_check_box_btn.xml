@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckBoxBtnActivity">
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_first"
+        android:text="Java"
+        android:textSize="20sp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_second"
+        android:layout_below="@id/check_first"
+        android:text="Android"
+        android:textSize="20sp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_third"
+        android:text="Flutter"
+        android:layout_below="@id/check_second"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/check_fourth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check_third"
+        android:text=".Net"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_fifth"
+        android:text="Angular JS"
+        android:layout_below="@id/check_fourth"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check_fifth"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonback"
+        android:fontFamily="@font/average"
+        android:gravity="center"
+        android:padding="5dp"
+        android:id="@+id/submitLanguage"
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>
