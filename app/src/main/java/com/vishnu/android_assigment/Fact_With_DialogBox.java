@@ -8,11 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Fact_With_DialogBox extends AppCompatActivity {
 
     EditText name;
-    Button submit;
+    Button submit,custome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,9 @@ public class Fact_With_DialogBox extends AppCompatActivity {
 
         name=findViewById(R.id.name_accept_of_user);
         submit=findViewById(R.id.cal_fact);
+        custome=findViewById(R.id.Custom_dialob_Box);
+
+
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,6 +31,26 @@ public class Fact_With_DialogBox extends AppCompatActivity {
                 String value=name.getText().toString();
                 int answer=calFact(value);
                 show_alertDialog_Box(answer,value);
+            }
+        });
+        custome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder=new AlertDialog.Builder(Fact_With_DialogBox.this);
+                builder.setTitle("Custome");
+                final View customView=getLayoutInflater().inflate(R.layout.custome_dialog,null);
+                builder.setView(customView);
+                EditText n=customView.findViewById(R.id.name_of_user);
+                Button submitcustome=custome.findViewById(R.id.submit_user);
+//                submitcustome.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        Toast.makeText(getApplicationContext(), n.getText().toString(), Toast.LENGTH_SHORT).show();
+//                    }
+//                });
+
+                AlertDialog alertDialog=builder.create();
+                alertDialog.show();
             }
         });
     }

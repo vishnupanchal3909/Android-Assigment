@@ -23,4 +23,13 @@
         android:layout_below="@id/name_accept_of_user"
         android:text="Submit"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/Custom_dialob_Box"
+        android:layout_marginLeft="90dp"
+        android:layout_below="@id/cal_fact"
+        android:text="Custome Dialog Box"/>
+
 </RelativeLayout>
