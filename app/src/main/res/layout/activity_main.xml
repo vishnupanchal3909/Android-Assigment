@@ -68,6 +68,19 @@
             android:padding="5dp"
             android:text="Calculator"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog"
+            android:padding="5dp"
+            android:text="Dialog Box"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialogCustom"
+            android:padding="5dp"
+            android:text="Dialog Box with custom"/>
+
     </LinearLayout>
 
 

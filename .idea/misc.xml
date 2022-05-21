@@ -6,6 +6,7 @@
         <entry key="..\:/Users/Vishnu/AndroidStudioProjects/Android_Assigment/app/src/main/res/drawable/buttonback.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Vishnu/AndroidStudioProjects/Android_Assigment/app/src/main/res/layout/activity_calculator.xml" value="0.25" />
         <entry key="..\:/Users/Vishnu/AndroidStudioProjects/Android_Assigment/app/src/main/res/layout/activity_check_box_btn.xml" value="0.25" />
+        <entry key="..\:/Users/Vishnu/AndroidStudioProjects/Android_Assigment/app/src/main/res/layout/activity_fact_with_dialog_box.xml" value="0.25" />
         <entry key="..\:/Users/Vishnu/AndroidStudioProjects/Android_Assigment/app/src/main/res/layout/activity_factorial.xml" value="0.25" />
         <entry key="..\:/Users/Vishnu/AndroidStudioProjects/Android_Assigment/app/src/main/res/layout/activity_increase.xml" value="0.25" />
         <entry key="..\:/Users/Vishnu/AndroidStudioProjects/Android_Assigment/app/src/main/res/layout/activity_jump_tonext.xml" value="0.25" />
@@ -15,6 +16,7 @@
         <entry key="..\:/Users/Vishnu/AndroidStudioProjects/Android_Assigment/app/src/main/res/layout/activity_opeartor.xml" value="0.25" />
         <entry key="..\:/Users/Vishnu/AndroidStudioProjects/Android_Assigment/app/src/main/res/layout/activity_radio_btn.xml" value="0.25" />
         <entry key="..\:/Users/Vishnu/AndroidStudioProjects/Android_Assigment/app/src/main/res/layout/activity_rating_bar.xml" value="0.25" />
+        <entry key="..\:/Users/Vishnu/AndroidStudioProjects/Android_Assigment/app/src/main/res/layout/custome_dialog.xml" value="0.25" />
       </map>
     </option>
   </component>
