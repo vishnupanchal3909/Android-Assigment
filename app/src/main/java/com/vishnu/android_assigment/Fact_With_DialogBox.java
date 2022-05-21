@@ -41,14 +41,13 @@ public class Fact_With_DialogBox extends AppCompatActivity {
                 final View customView=getLayoutInflater().inflate(R.layout.custome_dialog,null);
                 builder.setView(customView);
                 EditText n=customView.findViewById(R.id.name_of_user);
-                Button submitcustome=custome.findViewById(R.id.submit_user);
-//                submitcustome.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View view) {
-//                        Toast.makeText(getApplicationContext(), n.getText().toString(), Toast.LENGTH_SHORT).show();
-//                    }
-//                });
-
+                builder.setPositiveButton("Submit", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(getApplicationContext(), n.getText().toString(), Toast.LENGTH_SHORT).show();
+                    }
+                })      ;
+                builder.setCancelable(false);
                 AlertDialog alertDialog=builder.create();
                 alertDialog.show();
             }
