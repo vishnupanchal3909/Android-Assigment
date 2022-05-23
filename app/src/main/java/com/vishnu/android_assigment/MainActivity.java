@@ -10,11 +10,13 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 
+import java.sql.Time;
+
 public class MainActivity extends AppCompatActivity {
 
     Button JumpToWithText,ASMDBtn,FactorialBtn,RadioBtn,CheckBoxBtn,
             IncreaseTextBtn,LoginBtn,RatingBarBtn,CalBtn,dialogBtn,dialogBtnCust,dateBTn,
-            UPRLshiftsBtn,tableBtn;
+            UPRLshiftsBtn,tableBtn,TImeBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         UPRLshiftsBtn=findViewById(R.id.ULRLshit);
         tableBtn=findViewById(R.id.TableApp);
         dateBTn=findViewById(R.id.datecalender);
+        TImeBtn =findViewById(R.id.timepick);
 
 
         JumpToWithText.setOnClickListener(new View.OnClickListener() {
@@ -149,6 +152,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),DateCalender.class);
+                startActivity(intent);
+            }
+        });
+        TImeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),TimeSelect.class);
                 startActivity(intent);
             }
         });
