@@ -112,6 +112,13 @@
             android:padding="5dp"
             android:text="select Time"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagefactory"
+            android:padding="5dp"
+            android:text="Image Switcher"/>
+
     </LinearLayout>
 
     </ScrollView>

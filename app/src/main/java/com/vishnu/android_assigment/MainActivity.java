@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button JumpToWithText,ASMDBtn,FactorialBtn,RadioBtn,CheckBoxBtn,
             IncreaseTextBtn,LoginBtn,RatingBarBtn,CalBtn,dialogBtn,dialogBtnCust,dateBTn,
-            UPRLshiftsBtn,tableBtn,TImeBtn;
+            UPRLshiftsBtn,tableBtn,TImeBtn,imageswitcherBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         tableBtn=findViewById(R.id.TableApp);
         dateBTn=findViewById(R.id.datecalender);
         TImeBtn =findViewById(R.id.timepick);
+        imageswitcherBtn=findViewById(R.id.imagefactory);
 
 
         JumpToWithText.setOnClickListener(new View.OnClickListener() {
@@ -159,6 +160,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),TimeSelect.class);
+                startActivity(intent);
+            }
+        });
+        imageswitcherBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),SwitchImage.class);
                 startActivity(intent);
             }
         });
