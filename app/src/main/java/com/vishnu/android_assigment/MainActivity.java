@@ -13,8 +13,8 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button JumpToWithText,ASMDBtn,FactorialBtn,RadioBtn,CheckBoxBtn,
-            IncreaseTextBtn,LoginBtn,RatingBarBtn,CalBtn,dialogBtn,dialogBtnCust,
-            UPRLshiftsBtn;
+            IncreaseTextBtn,LoginBtn,RatingBarBtn,CalBtn,dialogBtn,dialogBtnCust,dateBTn,
+            UPRLshiftsBtn,tableBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         dialogBtn=findViewById(R.id.dialog);
         dialogBtnCust=findViewById(R.id.dialogCustom);
         UPRLshiftsBtn=findViewById(R.id.ULRLshit);
+        tableBtn=findViewById(R.id.TableApp);
+        dateBTn=findViewById(R.id.datecalender);
 
 
         JumpToWithText.setOnClickListener(new View.OnClickListener() {
@@ -133,6 +135,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),ProgramUPRLShifts.class);
+                startActivity(intent);
+            }
+        });
+        tableBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),TableApp.class);
+                startActivity(intent);
+            }
+        });
+        dateBTn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),DateCalender.class);
                 startActivity(intent);
             }
         });

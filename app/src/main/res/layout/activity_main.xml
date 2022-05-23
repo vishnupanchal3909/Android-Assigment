@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -86,8 +91,21 @@
             android:id="@+id/ULRLshit"
             android:padding="5dp"
             android:text="Upper,Lower Shifts"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TableApp"
+            android:padding="5dp"
+            android:text="Number Table "/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/datecalender"
+            android:padding="5dp"
+            android:text="select Date"/>
 
     </LinearLayout>
 
-
+    </ScrollView>
 </RelativeLayout>

@@ -11,6 +11,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class ProgramUPRLShifts extends AppCompatActivity {
 
     TextView answer_view;
@@ -33,6 +35,24 @@ public class ProgramUPRLShifts extends AppCompatActivity {
             public void onClick(View view) {
                 int resultId= radioGroup.getCheckedRadioButtonId();
                 radioButton=findViewById(resultId);
+                switch (radioButton.getText().toString()){
+                    case "Uppercase":
+                        String s=input.getText().toString();
+                        answer_view.setText(s.toUpperCase(Locale.ROOT));
+                        break;
+                    case "Lowercase":
+                        String s1=input.getText().toString();
+                        answer_view.setText(s1.toLowerCase(Locale.ROOT));
+                        break;
+                    case "Right Shifts":
+                        String s3=input.getText().toString();
+                        answer_view.setText(s3.substring(0,5));
+                        break;
+                    case "Left Shifts":
+                        String s4=input.getText().toString();
+                        answer_view.setText(s4.substring(s4.length()-5,s4.length()));
+                        break;
+                }
                 Toast.makeText(getApplicationContext(), radioButton.getText().toString(), Toast.LENGTH_SHORT).show();
             }
         });
