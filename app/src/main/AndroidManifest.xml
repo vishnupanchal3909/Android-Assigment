@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Assigment">
         <activity
+            android:name=".ProgramUPRLShifts"
+            android:exported="true" />
+        <activity
             android:name=".Fact_With_DialogBox"
             android:exported="true" />
         <activity

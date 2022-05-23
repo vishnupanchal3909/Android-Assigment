@@ -13,7 +13,8 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button JumpToWithText,ASMDBtn,FactorialBtn,RadioBtn,CheckBoxBtn,
-            IncreaseTextBtn,LoginBtn,RatingBarBtn,CalBtn,dialogBtn,dialogBtnCust;
+            IncreaseTextBtn,LoginBtn,RatingBarBtn,CalBtn,dialogBtn,dialogBtnCust,
+            UPRLshiftsBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         RatingBarBtn=findViewById(R.id.Rating);
         CalBtn=findViewById(R.id.Calculator);
         dialogBtn=findViewById(R.id.dialog);
-        dialogBtn=findViewById(R.id.dialogCustom);
+        dialogBtnCust=findViewById(R.id.dialogCustom);
+        UPRLshiftsBtn=findViewById(R.id.ULRLshit);
 
 
         JumpToWithText.setOnClickListener(new View.OnClickListener() {
@@ -120,10 +122,17 @@ public class MainActivity extends AppCompatActivity {
                 alert.show();
             }
         });
-        dialogBtn.setOnClickListener(new View.OnClickListener() {
+        dialogBtnCust.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),Fact_With_DialogBox.class);
+                startActivity(intent);
+            }
+        });
+        UPRLshiftsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),ProgramUPRLShifts.class);
                 startActivity(intent);
             }
         });

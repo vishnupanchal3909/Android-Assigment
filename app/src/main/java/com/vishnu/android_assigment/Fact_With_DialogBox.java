@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,8 +30,12 @@ public class Fact_With_DialogBox extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value=name.getText().toString();
-                int answer=calFact(value);
-                show_alertDialog_Box(answer,value);
+                if(TextUtils.isEmpty(value)){
+                    name.setError("Please Enter Number");
+                }else {
+                    int answer = calFact(value);
+                    show_alertDialog_Box(answer, value);
+                }
             }
         });
         custome.setOnClickListener(new View.OnClickListener() {
