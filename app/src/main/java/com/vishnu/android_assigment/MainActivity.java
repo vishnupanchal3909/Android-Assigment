@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button JumpToWithText,ASMDBtn,FactorialBtn,RadioBtn,CheckBoxBtn,
             IncreaseTextBtn,LoginBtn,RatingBarBtn,CalBtn,dialogBtn,dialogBtnCust,dateBTn,
-            UPRLshiftsBtn,tableBtn,TImeBtn,imageswitcherBtn,sppinerBtn;
+            UPRLshiftsBtn,tableBtn,TImeBtn,imageswitcherBtn,sppinerBtn,gridview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,8 +39,9 @@ public class MainActivity extends AppCompatActivity {
         TImeBtn =findViewById(R.id.timepick);
         imageswitcherBtn=findViewById(R.id.imagefactory);
         sppinerBtn=findViewById(R.id.spinner);
-
-
+        gridview=findViewById(R.id.gridBtn);
+//
+//
         JumpToWithText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -176,6 +177,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),SpinnerActvity.class);
+                startActivity(intent);
+            }
+        });
+        gridview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),GridData.class);
                 startActivity(intent);
             }
         });

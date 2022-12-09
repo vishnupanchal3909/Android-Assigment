@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Assigment">
         <activity
+            android:name=".GridData"
+            android:exported="true" />
+        <activity
             android:name=".SpinnerActvity"
             android:exported="true" />
         <activity

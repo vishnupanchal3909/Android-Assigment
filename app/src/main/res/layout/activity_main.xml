@@ -125,6 +125,12 @@
             android:id="@+id/spinner"
             android:padding="5dp"
             android:text="Sppiner"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridBtn"
+            android:padding="5dp"
+            android:text="GridView"/>
 
     </LinearLayout>
 
